@@ -1,0 +1,26 @@
+.container {
+    height: 100;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 3px;
+}
+
+
+.header {
+
+    grid-column: 2/-1;
+}
+
+.menu {
+    grid-row: 1/-1;
+}
+
+.content {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+}
+
+.footer {
+    grid-column: 1/-1;
+}

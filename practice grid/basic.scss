@@ -1,0 +1,64 @@
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: midnightblue;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: rgb(172, 99, 99);
+    box-sizing: border-box;
+}
+
+.container div:nth-child(1n) {
+    background-color: black;
+
+}
+
+.container div:nth-child(2n) {
+    background-color: rgb(72, 82, 83);
+    ;
+
+}
+
+.container div:nth-child(3n) {
+    background-color: rgb(163, 141, 141);
+
+}
+
+.container div:nth-child(4n) {
+    background-color: black;
+
+}
+
+.container {
+    height: 100;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(15, 1fr);
+    gap: 3px;
+}
+
+
+.header {
+
+    grid-column: 2/-1;
+}
+
+.menu {
+    grid-row: 1/-1;
+}
+
+.content {
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+}
+
+.footer {
+    grid-column: 1/-1;
+}
