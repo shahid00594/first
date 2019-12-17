@@ -1,0 +1,308 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  background: white;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, white), color-stop(50%, #2cfeee));
+  background: linear-gradient(180deg, white 1%, #2cfeee 50%);
+}
+
+.back {
+  position: absolute;
+  background: fixed;
+}
+
+.container div {
+  font-size: 2em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[13];
+      grid-template-columns: repeat(13, minmax(100px, 1fr));
+  -ms-grid-rows: (200px)[16];
+      grid-template-rows: repeat(16, 200px);
+}
+
+.logo {
+  opacity: 30%;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 85px;
+  background-color: #28364d;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  z-index: 3;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+
+.menu {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 2;
+  height: 90px;
+  width: 100%;
+  background-color: #44a5a7;
+  grid-column: 1/-1;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+
+.menu a {
+  color: #4ed8dd;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.menu a:hover {
+  color: #0e2829;
+}
+
+.resume {
+  margin-left: auto;
+}
+
+.resume::before {
+  position: absolute;
+  content: '';
+  background: #8d4b4b;
+  width: 50px;
+  height: 50px;
+  right: 150px;
+  -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+          clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  -webkit-animation: arrow .5s infinite;
+          animation: arrow .5s infinite;
+}
+
+@-webkit-keyframes arrow {
+  from {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+@keyframes arrow {
+  from {
+    -webkit-transform: translateX(-5px);
+            transform: translateX(-5px);
+  }
+  to {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-column: 1/-1;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
+}
+
+span {
+  color: #09a9f3;
+}
+
+.avi {
+  position: absolute;
+  -webkit-transform: translateX(900px);
+          transform: translateX(900px);
+  z-index: 1;
+}
+
+.lamp {
+  position: absolute;
+  -webkit-transform: translateX(905px);
+          transform: translateX(905px);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #28364d;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  z-index: 1;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 70% 75%, 0% 75%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 70% 75%, 0% 75%);
+  margin-bottom: -5vw;
+}
+
+#portfolio {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #56c3c5;
+  grid-column: 1/-1;
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 6;
+  grid-row: 6/12;
+}
+
+.font_0 {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+}
+
+#image_content1 {
+  display: absolute;
+  opacity: 60%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(68px);
+          transform: translateX(68px);
+}
+
+#image_content2 {
+  display: absolute;
+  opacity: 75%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translate(295px, -206px);
+          transform: translate(295px, -206px);
+}
+
+#image_content3 {
+  display: absolute;
+  opacity: 75%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translate(528px, -412px);
+          transform: translate(528px, -412px);
+}
+
+#image_content1:hover {
+  opacity: 100%;
+}
+
+#image_content2:hover {
+  opacity: 100%;
+}
+
+#image_content3:hover {
+  opacity: 100%;
+}
+
+.contact1 {
+  padding: 2em;
+  display: absolute;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #42e6a4;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 11;
+  grid-column: 2/13;
+  -ms-grid-row: 11;
+  -ms-grid-row-span: 3;
+  grid-row: 11/14;
+  z-index: 1;
+}
+
+.contact1 a {
+  text-decoration: none;
+  color: #2a9797;
+}
+
+.contact1 a:hover {
+  color: #133636;
+}
+
+#contact form {
+  float: right;
+  -webkit-transform: translateY(-330px);
+          transform: translateY(-330px);
+}
+
+#contact form input {
+  border-radius: 1rem;
+  color: #175152;
+  width: 150px;
+  height: 25px;
+}
+
+#contact form input:hover {
+  border-radius: 1rem;
+  background-color: #93b2b3;
+}
+
+.footer2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #175152;
+  grid-column: 1/-1;
+  -ms-grid-row: 12;
+  -ms-grid-row-span: 5;
+  grid-row: 12/17;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 80% 70%, 0% 100%);
+          clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 80% 70%, 0% 100%);
+}
+
+.footer2 a {
+  text-decoration: none;
+  color: #4ed8dd;
+}
+
+.footer2 a:hover {
+  color: #0e2829;
+}
+/*# sourceMappingURL=doc.css.map */
