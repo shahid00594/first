@@ -3,7 +3,10 @@ body {
 	margin: 0px;
 	padding: 0px;
 	background: rgb(255, 255, 255);
-	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 1%, rgba(44, 254, 238, 1) 50%);
+	background: linear-gradient(180deg,
+			rgba(255, 255, 255, 1) 1%,
+			rgba(44, 254, 238, 1) 50%);
+	scroll-behavior: smooth;
 }
 
 .back {
@@ -12,23 +15,19 @@ body {
 }
 
 .container div {
-
 	font-size: 2em;
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
 }
 
 .container {
 	display: grid;
 	grid-template-columns: repeat(13, minmax(100px, 1fr));
 	grid-template-rows: repeat(16, 200px);
-
 }
 
 .logo {
 	opacity: 30%;
 }
-
 
 .header {
 	display: flex;
@@ -70,17 +69,21 @@ body {
 	margin-left: auto;
 }
 
-
 .resume::before {
 	position: absolute;
 	content: '';
 	background: rgb(141, 75, 75);
 	width: 50px;
-	height: 50px;
+	height: 40px;
 	right: 150px;
-	clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-	animation: arrow .5s infinite;
-
+	clip-path: polygon(0% 20%,
+			60% 20%,
+			60% 0%,
+			100% 50%,
+			60% 100%,
+			60% 80%,
+			0% 80%);
+	animation: arrow 0.5s infinite;
 }
 
 @keyframes arrow {
@@ -97,7 +100,7 @@ body {
 	display: flex;
 	grid-column: 1/-1;
 	grid-row: 2/4;
-
+	box-shadow: 0 0 100px 100px rgb(55, 209, 214);
 }
 
 span {
@@ -113,7 +116,6 @@ span {
 .lamp {
 	position: absolute;
 	transform: translateX(905px);
-
 }
 
 .footer {
@@ -121,10 +123,17 @@ span {
 	justify-content: center;
 	align-items: center;
 	background-color: #28364d;
+
 	grid-column: 2/13;
 	grid-row: 5/6;
 	z-index: 1;
-	clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 70% 75%, 0% 75%);
+	clip-path: polygon(0% 0%,
+			100% 0%,
+			100% 75%,
+			75% 75%,
+			75% 100%,
+			70% 75%,
+			0% 75%);
 	margin-bottom: -5vw;
 }
 
@@ -135,7 +144,6 @@ span {
 	background-color: #56c3c5;
 	grid-column: 1/-1;
 	grid-row: 6/12;
-
 }
 
 .font_0 {
@@ -147,7 +155,6 @@ span {
 	opacity: 60%;
 	transition: 1s;
 	transform: translateX(68px);
-
 }
 
 #image_content2 {
@@ -166,17 +173,14 @@ span {
 
 #image_content1:hover {
 	opacity: 100%;
-
 }
 
 #image_content2:hover {
 	opacity: 100%;
-
 }
 
 #image_content3:hover {
 	opacity: 100%;
-
 }
 
 .contact1 {
@@ -189,8 +193,7 @@ span {
 	grid-column: 2/13;
 	grid-row: 11/14;
 	z-index: 1;
-
-
+	box-shadow: 30px 30px rgb(98, 123, 124);
 }
 
 .contact1 a {

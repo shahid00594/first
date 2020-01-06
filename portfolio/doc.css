@@ -5,6 +5,7 @@ body {
   background: white;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, white), color-stop(50%, #2cfeee));
   background: linear-gradient(180deg, white 1%, #2cfeee 50%);
+  scroll-behavior: smooth;
 }
 
 .back {
@@ -92,12 +93,12 @@ body {
   content: '';
   background: #8d4b4b;
   width: 50px;
-  height: 50px;
+  height: 40px;
   right: 150px;
   -webkit-clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
           clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
-  -webkit-animation: arrow .5s infinite;
-          animation: arrow .5s infinite;
+  -webkit-animation: arrow 0.5s infinite;
+          animation: arrow 0.5s infinite;
 }
 
 @-webkit-keyframes arrow {
@@ -130,6 +131,8 @@ body {
   -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   grid-row: 2/4;
+  -webkit-box-shadow: 0 0 100px 100px #37d1d6;
+          box-shadow: 0 0 100px 100px #37d1d6;
 }
 
 span {
@@ -249,6 +252,8 @@ span {
   -ms-grid-row-span: 3;
   grid-row: 11/14;
   z-index: 1;
+  -webkit-box-shadow: 30px 30px #627b7c;
+          box-shadow: 30px 30px #627b7c;
 }
 
 .contact1 a {
