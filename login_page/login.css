@@ -1,0 +1,36 @@
+html body {
+	box-sizing: border-box;
+	padding: 20px;
+	margin: 0;
+	height: 100%;
+	background-color: rgb(134, 113, 190);
+	font-family: 'Segoe UI';
+}
+
+.container {
+	height: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.btn {
+	width: 100px;
+	height: 30px;
+	border-radius: 1rem;
+	background: rgb(134, 113, 190);
+
+	transform: translateX(190px);
+}
+.btn:hover {
+	background: rgb(230, 233, 54);
+}
+.login input {
+	width: 200px;
+	height: 25px;
+	border-radius: 1rem;
+	background: rgb(230, 233, 54);
+}
+.photo {
+	flex: 10;
+}

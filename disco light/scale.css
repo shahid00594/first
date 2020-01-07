@@ -1,0 +1,100 @@
+body {
+	transform: translate(650px, 250px);
+	background: #000;
+}
+
+div {
+	float: left;
+	background: rgb(184, 8, 8);
+	width: 5px;
+	height: 25px;
+	position: relative;
+	animation-delay: 1s;
+	animation-name: anime;
+	animation-duration: 0.2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+	border-radius: 60%;
+}
+
+div:hover {
+	transform: scale(2);
+}
+
+@keyframes anime {
+	25% {
+		background-color: rgb(106, 7, 163);
+		left: 5px;
+		top: 10px;
+	}
+
+	50% {
+		background-color: rgb(7, 128, 133);
+		left: 10px;
+		top: 15px;
+	}
+
+	75% {
+		background-color: rgb(20, 126, 11);
+		left: 15px;
+		top: 20px;
+	}
+
+	100% {
+		background-color: rgb(126, 14, 42);
+		left: 20px;
+		top: 25px;
+	}
+}
+
+.even {
+	position: absolute;
+}
+
+#first {
+	transform: rotateX(0deg);
+}
+
+#second {
+	transform: rotate(270deg);
+}
+
+#third {
+	transform: rotate(240deg);
+}
+
+#forth {
+	transform: rotate(210deg);
+}
+
+#fifth {
+	transform: rotate(180deg);
+}
+
+#sixth {
+	transform: rotate(150deg);
+}
+
+#seventh {
+	transform: rotate(90deg);
+}
+
+#eight {
+	transform: rotate(60deg);
+}
+
+#nine {
+	transform: rotate(30deg);
+}
+
+#ten {
+	transform: rotate(120deg);
+}
+
+#eleven {
+	transform: rotate(300deg);
+}
+
+#twelve {
+	transform: rotate(330deg);
+}

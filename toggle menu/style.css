@@ -1,0 +1,120 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: linear-gradient(315deg, white 50%, black 70%);
+}
+
+#menubar {
+  padding: 10px;
+  position: absolute;
+}
+
+#menu {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+}
+
+.bar {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: block;
+}
+
+#bar1 {
+  color: #a04609;
+  border: solid 2px;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+#bar2 {
+  color: #f7f19c;
+  border: solid 1px;
+}
+
+#bar3 {
+  color: #a04609;
+  border: solid 2px;
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
+}
+
+.change #bar1 {
+  -webkit-transform: translateY(4px) rotate(-45deg);
+          transform: translateY(4px) rotate(-45deg);
+}
+
+.change #bar3 {
+  -webkit-transform: translateY(-2px) rotate(45deg);
+          transform: translateY(-2px) rotate(45deg);
+}
+
+.change #bar2 {
+  opacity: 0;
+}
+
+.nav {
+  display: none;
+}
+
+.changem {
+  display: block;
+}
+
+.nav li {
+  list-style: none;
+  padding: 30px;
+}
+
+.nav li a {
+  color: cornsilk;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+}
+
+.nav li:hover {
+  font-weight: bold;
+}
+
+.changebg {
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: green;
+  width: 500px;
+  height: 600px;
+  -webkit-clip-path: polygon(0% 0%, 55% 0, 0% 100%);
+          clip-path: polygon(0% 0%, 55% 0, 0% 100%);
+}
+
+.main {
+  top: 2em;
+  left: 1em;
+  right: 2em;
+  position: absolute;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(100px, 1fr));
+  -ms-grid-rows: (100px)[5];
+      grid-template-rows: repeat(5, 100px);
+  gap: 4px;
+  background-color: #004445;
+  z-index: -1;
+  -webkit-box-shadow: 10px 10px grey;
+          box-shadow: 10px 10px grey;
+}
+
+.main h2 {
+  background-color: #2c7873;
+  border-radius: 0.5em;
+}
+
+.main h2 p {
+  font-size: 1rem;
+  border-radius: 0.5em;
+  background-color: #6fb98f;
+}
+/*# sourceMappingURL=style.css.map */
