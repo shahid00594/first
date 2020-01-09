@@ -1,0 +1,193 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: darkslategray;
+}
+
+#sky {
+  height: 200px;
+  background: skyblue;
+}
+
+#sky:hover {
+  height: 200px;
+  background-color: #000;
+}
+
+#cloud1 {
+  -webkit-animation-name: day;
+          animation-name: day;
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+#cloud2 {
+  opacity: 30%;
+  -webkit-animation-name: day;
+          animation-name: day;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes day {
+  from {
+    -webkit-transform: translatex(-550px);
+            transform: translatex(-550px);
+  }
+  to {
+    -webkit-transform: translateX(1350px);
+            transform: translateX(1350px);
+  }
+}
+
+@keyframes day {
+  from {
+    -webkit-transform: translatex(-550px);
+            transform: translatex(-550px);
+  }
+  to {
+    -webkit-transform: translateX(1350px);
+            transform: translateX(1350px);
+  }
+}
+
+#cloud3 {
+  opacity: 30%;
+  -webkit-animation-name: day1;
+          animation-name: day1;
+  -webkit-animation-duration: 40s;
+          animation-duration: 40s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@-webkit-keyframes day1 {
+  from {
+    -webkit-transform: translatex(-1300px);
+            transform: translatex(-1300px);
+  }
+  to {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+}
+
+@keyframes day1 {
+  from {
+    -webkit-transform: translatex(-1300px);
+            transform: translatex(-1300px);
+  }
+  to {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+  }
+}
+
+#grass {
+  height: 200px;
+  background: darkgreen;
+}
+
+#road {
+  height: 200px;
+  background: darkslategray;
+  -webkit-transform: rotateX(50deg);
+          transform: rotateX(50deg);
+}
+
+#line {
+  height: 4px;
+  width: 1350px;
+  -webkit-transform: translateY(70px);
+          transform: translateY(70px);
+  border-top: 10px dashed white;
+}
+
+hr {
+  height: 4px;
+  color: white;
+}
+
+.car {
+  position: absolute;
+  top: -280px;
+  left: 0px;
+  -webkit-animation-name: drive;
+          animation-name: drive;
+  -webkit-animation-duration: 7s;
+          animation-duration: 7s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition: ease-out;
+  transition: ease-out;
+}
+
+@-webkit-keyframes drive {
+  from {
+    -webkit-transform: translatex(-550px);
+            transform: translatex(-550px);
+  }
+  to {
+    -webkit-transform: translateX(1350px);
+            transform: translateX(1350px);
+  }
+}
+
+@keyframes drive {
+  from {
+    -webkit-transform: translatex(-550px);
+            transform: translatex(-550px);
+  }
+  to {
+    -webkit-transform: translateX(1350px);
+            transform: translateX(1350px);
+  }
+}
+
+.car1 {
+  bottom: -280px;
+  right: 0px;
+  -webkit-animation-name: drive1;
+          animation-name: drive1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition: ease-out;
+  transition: ease-out;
+  animation-direction: reverse;
+}
+
+@-webkit-keyframes drive1 {
+  from {
+    -webkit-transform: translatex(-1350px);
+            transform: translatex(-1350px);
+  }
+  to {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+  }
+}
+
+@keyframes drive1 {
+  from {
+    -webkit-transform: translatex(-1350px);
+            transform: translatex(-1350px);
+  }
+  to {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+  }
+}
+/*# sourceMappingURL=text.css.map */

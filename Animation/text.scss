@@ -1,0 +1,134 @@
+html,
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+	background-color: darkslategray;
+}
+
+#sky {
+	height: 200px;
+	background: skyblue;
+
+}
+
+#sky:hover {
+	height: 200px;
+	background-color: #000;
+
+
+}
+
+#cloud1 {
+
+	animation-name: day;
+	animation-duration: 45s;
+	animation-iteration-count: infinite;
+}
+
+#cloud2 {
+
+	opacity: 30%;
+	animation-name: day;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes day {
+	from {
+		transform: translatex(-550px);
+	}
+
+	to {
+		transform: translateX(1350px);
+	}
+}
+
+#cloud3 {
+	opacity: 30%;
+	animation-name: day1;
+	animation-duration: 40s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes day1 {
+	from {
+		transform: translatex(-1300px);
+	}
+
+	to {
+		transform: translateX(500px);
+	}
+}
+
+
+#grass {
+	height: 200px;
+	background: darkgreen;
+}
+
+#road {
+	height: 200px;
+	background: darkslategray;
+	transform: rotateX(50deg);
+
+}
+
+#line {
+	height: 4px;
+	width: 1350px;
+	transform: translateY(70px);
+
+	border-top: 10px dashed white;
+}
+
+hr {
+	height: 4px;
+	color: white;
+}
+
+.car {
+	position: absolute;
+	top: -280px;
+	left: 0px;
+	animation-name: drive;
+	animation-duration: 7s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	transition: ease-out;
+
+}
+
+@keyframes drive {
+	from {
+		transform: translatex(-550px);
+	}
+
+	to {
+		transform: translateX(1350px);
+	}
+}
+
+.car1 {
+
+	bottom: -280px;
+	right: 0px;
+	animation-name: drive1;
+	animation-duration: 5s;
+	animation-delay: 2s;
+	animation-iteration-count: infinite;
+	transition: ease-out;
+	animation-direction: reverse;
+
+}
+
+@keyframes drive1 {
+	from {
+		transform: translatex(-1350px);
+	}
+
+	to {
+		transform: translateX(1400px);
+	}
+}
