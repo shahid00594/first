@@ -147,41 +147,23 @@ span {
 }
 
 .font_0 {
-	transform: translateX(200px);
+	transform: translate(200px, 50px);
 }
 
-#image_content1 {
-	display: absolute;
-	opacity: 60%;
-	transition: 1s;
-	transform: translateX(68px);
+.image {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+
+
 }
 
-#image_content2 {
-	display: absolute;
-	opacity: 75%;
-	transition: 1s;
-	transform: translate(295px, -206px);
+.image_content:hover {
+	transform: scale(1.1);
+
 }
 
-#image_content3 {
-	display: absolute;
-	opacity: 75%;
-	transition: 1s;
-	transform: translate(528px, -412px);
-}
 
-#image_content1:hover {
-	opacity: 100%;
-}
-
-#image_content2:hover {
-	opacity: 100%;
-}
-
-#image_content3:hover {
-	opacity: 100%;
-}
 
 .contact1 {
 	padding: 2em;

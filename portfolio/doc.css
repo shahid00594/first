@@ -192,47 +192,22 @@ span {
 }
 
 .font_0 {
-  -webkit-transform: translateX(200px);
-          transform: translateX(200px);
+  -webkit-transform: translate(200px, 50px);
+          transform: translate(200px, 50px);
 }
 
-#image_content1 {
-  display: absolute;
-  opacity: 60%;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-transform: translateX(68px);
-          transform: translateX(68px);
+.image {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[10];
+      grid-template-rows: repeat(10, 1fr);
 }
 
-#image_content2 {
-  display: absolute;
-  opacity: 75%;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-transform: translate(295px, -206px);
-          transform: translate(295px, -206px);
-}
-
-#image_content3 {
-  display: absolute;
-  opacity: 75%;
-  -webkit-transition: 1s;
-  transition: 1s;
-  -webkit-transform: translate(528px, -412px);
-          transform: translate(528px, -412px);
-}
-
-#image_content1:hover {
-  opacity: 100%;
-}
-
-#image_content2:hover {
-  opacity: 100%;
-}
-
-#image_content3:hover {
-  opacity: 100%;
+.image_content:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .contact1 {
