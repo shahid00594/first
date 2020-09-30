@@ -1,0 +1,67 @@
+* body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	background-color: teal;
+}
+
+.drop {
+	background-color: rgb(32, 80, 80);
+	display: block;
+
+	height: 100px;
+}
+
+ul li {
+	width: 12rem;
+	height: 35px;
+	float: left;
+	text-align: center;
+
+	line-height: 35px;
+	border: solid white 1px;
+}
+
+
+
+ul {
+	margin-left: 2em;
+}
+
+ul li {
+	text-decoration: none;
+	background: rgb(172, 158, 79);
+	display: block;
+}
+
+ul li a {
+	text-decoration: none;
+	color: teal;
+	display: block;
+	transition: 3s;
+}
+
+ul li a:hover {
+	color: tomato;
+	transform: rotateX(360deg);
+}
+
+ul li ul li {
+	display: none;
+}
+
+ul li:hover ul li {
+	display: block;
+}
+
+.btn {
+
+	background: rgb(214, 165, 73);
+	color: teal;
+	border: none;
+}
+
+.btn:hover {
+	color: rgb(0, 0, 0);
+	transform: rotateX(360deg);
+}

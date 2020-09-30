@@ -1,0 +1,21 @@
+body {
+    background-color: skyblue;
+    animation-name: night;
+    animation-iteration-count: infinite;
+    animation-duration: 30s;
+
+
+}
+
+@keyframes night {
+    0% {
+        background-color: skyblue;
+    }
+
+    50% {
+        background-color: rgb(33, 33, 73);
+        background-image: url('./star.png');
+
+    }
+
+}

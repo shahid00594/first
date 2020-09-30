@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-color: darkslategray;
+}
+
+#main {
+    background: rgb(44, 48, 46);
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 4%;
+
+
+}
+
+#current-time {
+    padding: 4px;
+    font-size: 5em;
+    font-family: 'Tomorrow', sans-serif;
+    color: rgb(148, 241, 237);
+
+    opacity: 0.5;
+}
+
+#current-time:hover {
+    transform: scale(2);
+    background-color: darkslategray;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1:hover {
+    color: blue;
+
+}
+
+.hide-me {
+    display: none;
+}
+
+#info {
+    margin-top: 22px;
+    width: 100px;
+    height: 30px;
+    padding: 3px;
+    border-radius: 50px;
+    background: cornflowerblue;
+
+
+}
+
+#info:hover {
+    color: blue;
+    background: rgb(102, 159, 177);
+}

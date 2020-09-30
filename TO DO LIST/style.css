@@ -1,0 +1,65 @@
+body {
+	background-color: rgb(57, 61, 63);
+}
+
+.container {
+	background-color: skyblue;
+	width: 300px;
+
+	float: right;
+	box-shadow: 0 0 1em rgb(205, 235, 135);
+}
+
+.done {
+	color: red;
+	text-decoration: line-through;
+}
+
+h1 {
+	background-color: teal;
+	color: white;
+	margin: 0;
+	padding: 10px 20px;
+	font-weight: normal;
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+li {
+	background-color: white;
+	height: 30px;
+	line-height: 30px;
+}
+
+li:nth-child(2n) {
+	background-color: skyblue;
+}
+
+input {
+	background-color: skyblue;
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+	outline: none;
+}
+input:focus {
+	border: 2px solid blue;
+	background-color: white;
+}
+button {
+	float: right;
+}
+
+span {
+	margin-right: 7px;
+	padding: 6px;
+	background-color: teal;
+	color: white;
+}

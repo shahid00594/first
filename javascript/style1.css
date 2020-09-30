@@ -1,0 +1,48 @@
+body {
+    background-color: lightslategrey;
+}
+
+
+h1 {
+    margin-left: 500px;
+    margin-top: 10px;
+
+}
+
+
+
+.strike {
+    text-decoration: line-through;
+    opacity: 0.5;
+    color: rgb(107, 9, 9);
+}
+
+
+
+.container {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: 550px;
+    margin-top: 200px;
+    border-radius: 50%;
+
+    background-color: rgb(27, 4, 12);
+}
+
+
+.btn {
+
+    margin-left: 75px;
+    margin-top: 80px;
+    border-radius: 50%;
+    width: 25%;
+    height: 25%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(199, 179, 5);
+    box-shadow: none;
+}
+
+.invisible {
+    background-color: rgb(95, 153, 37);
+}

@@ -1,0 +1,79 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgb(197, 192, 192);
+    font-family: Arial;
+}
+
+/*drop down menu list*/
+.menu {
+    background: rgb(167, 163, 163);
+}
+
+.menu ul {
+    display: inline-flex;
+    list-style: none;
+    background: inherit;
+}
+
+.menu ul li {
+    margin: 2px;
+    padding: 5px;
+    background: inherit;
+}
+
+.menu li :hover {
+    color: rgb(127, 181, 218);
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: rgb(27, 133, 32);
+    background: inherit;
+}
+
+.submenu_1 ul {
+    display: none;
+    margin-top: 5px;
+}
+
+.submenu_1 ul li {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px groove;
+    width: 150px;
+    border-radius: 0;
+    text-align: left;
+}
+
+.menu ul :hover .submenu_1 ul {
+    display: block;
+    position: absolute;
+    background: rgb(166, 177, 170);
+}
+
+/*chess board*/
+
+.common {
+    justify-content: center;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(8, 74px);
+    grid-template-rows: repeat(8, 74px);
+    gap: 4px;
+    transition: 2s;
+}
+
+.black {
+    background-color: rgb(127, 133, 139);
+}
+
+.white {
+    background-color: rgb(45, 197, 108);
+}
+
+.common div:hover {
+    opacity: 0.5;
+    transform: scale(2);
+}

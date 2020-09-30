@@ -1,0 +1,30 @@
+body {
+  background-color: skyblue;
+  -webkit-animation-name: night;
+          animation-name: night;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+}
+
+@-webkit-keyframes night {
+  0% {
+    background-color: skyblue;
+  }
+  50% {
+    background-color: #212149;
+    background-image: url("./star.png");
+  }
+}
+
+@keyframes night {
+  0% {
+    background-color: skyblue;
+  }
+  50% {
+    background-color: #212149;
+    background-image: url("./star.png");
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+body {
+    background: rgb(9, 9, 121);
+    background: linear-gradient(266deg,
+            rgba(9, 9, 121, 1) 35%,
+            rgba(255, 0, 0, 0.9136029411764706) 100%);
+}
+
+#bat {
+    position: absolute;
+    animation-name: fight;
+    animation-iteration-count: 1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fight {
+    from {
+        transform: translateX(-900px);
+    }
+
+    to {
+        transform: translateX(40px);
+    }
+}
+
+.img {
+    transform: translateY(-300px);
+}
+
+#sup {
+    position: absolute;
+    animation-name: fight1;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fight1 {
+    from {
+        transform: translateX(2000px);
+    }
+
+    to {
+        transform: translateX(700px);
+    }
+}
+
+#superman {
+    margin-top: 200px;
+    position: absolute;
+    animation-name: fight2;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fight2 {
+    from {
+        transform: translateX(-600px);
+    }
+
+    to {
+        transform: translateX(1400px);
+    }
+}

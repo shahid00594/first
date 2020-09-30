@@ -1,0 +1,113 @@
+body {
+  background: #090979;
+  background: linear-gradient(266deg, #090979 35%, rgba(255, 0, 0, 0.913603) 100%);
+}
+
+#bat {
+  position: absolute;
+  -webkit-animation-name: fight;
+          animation-name: fight;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fight {
+  from {
+    -webkit-transform: translateX(-900px);
+            transform: translateX(-900px);
+  }
+  to {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+}
+
+@keyframes fight {
+  from {
+    -webkit-transform: translateX(-900px);
+            transform: translateX(-900px);
+  }
+  to {
+    -webkit-transform: translateX(40px);
+            transform: translateX(40px);
+  }
+}
+
+.img {
+  -webkit-transform: translateY(-300px);
+          transform: translateY(-300px);
+}
+
+#sup {
+  position: absolute;
+  -webkit-animation-name: fight1;
+          animation-name: fight1;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fight1 {
+  from {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+  to {
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
+  }
+}
+
+@keyframes fight1 {
+  from {
+    -webkit-transform: translateX(2000px);
+            transform: translateX(2000px);
+  }
+  to {
+    -webkit-transform: translateX(700px);
+            transform: translateX(700px);
+  }
+}
+
+#superman {
+  margin-top: 200px;
+  position: absolute;
+  -webkit-animation-name: fight2;
+          animation-name: fight2;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fight2 {
+  from {
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+  }
+  to {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+  }
+}
+
+@keyframes fight2 {
+  from {
+    -webkit-transform: translateX(-600px);
+            transform: translateX(-600px);
+  }
+  to {
+    -webkit-transform: translateX(1400px);
+            transform: translateX(1400px);
+  }
+}
+/*# sourceMappingURL=style.css.map */

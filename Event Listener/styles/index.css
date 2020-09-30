@@ -1,0 +1,25 @@
+body {
+  background-color: cornflowerblue;
+  height: 100vh;
+}
+
+
+#container {
+
+  display: inline-block;
+
+}
+
+button {
+  margin: 0 auto;
+  background-color: darkcyan;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 80%;
+  width: 100px;
+  height: 20px;
+  outline: none;
+  float: right;
+
+
+
+}

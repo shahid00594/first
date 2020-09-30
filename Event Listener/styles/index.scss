@@ -1,0 +1,21 @@
+$primaryColor: 'red';
+
+@mixin heightChange($par) {
+	height: 100% - $par;
+}
+
+body {
+	height: 150vh;
+
+	h1 {
+		color: $primaryColor;
+	}
+}
+
+#first {
+	@include heightChange(80%);
+}
+
+#second {
+	@include heightChange(70%);
+}
