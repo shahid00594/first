@@ -1,0 +1,113 @@
+body {
+	background-color: gray;
+	margin: 25px;
+	padding: 0;
+}
+
+.container {
+	background-color: rgb(147, 228, 147);
+	background: radial-gradient(
+		circle,
+		rgba(34, 193, 195, 1) 0%,
+		rgba(64, 182, 166, 1) 40%,
+		rgba(182, 140, 48, 1) 100%
+	);
+	width: 400rem;
+	height: 35rem;
+	max-width: 90%;
+	max-height: 100%;
+	margin: 0 auto;
+	top: 5px;
+}
+
+.calculator {
+	width: 100rem;
+	height: 25rem;
+	margin: 0 auto;
+	padding-top: 5px;
+	background: rgb(64, 182, 166);
+	background: linear-gradient(
+		90deg,
+		rgba(64, 182, 166, 1) 40%,
+		rgba(48, 182, 106, 0.3085609243697479) 100%
+	);
+	max-width: 30%;
+	min-height: 100%;
+	position: relative;
+	border-radius: 25px;
+	box-shadow: 0px 0px 5px 5px lightblue;
+}
+
+#result {
+	height: 10rem;
+	background-color: rgb(182, 182, 182);
+	padding: 2px;
+	border-radius: 25px;
+}
+
+#history {
+	text-align: right;
+	height: 20px;
+	margin: 5px 20px;
+	padding: 15px;
+	font-size: 15px;
+	color: honeydew;
+	background: rgb(64, 182, 166);
+	background: linear-gradient(
+		90deg,
+		rgba(64, 182, 166, 1) 40%,
+		rgba(48, 182, 106, 0.3085609243697479) 100%
+	);
+	border-radius: 15px;
+}
+
+#output {
+	text-align: right;
+	height: 60px;
+	margin: 5px 20px;
+	padding: 15px;
+	font-size: 30px;
+	color: honeydew;
+	background: rgb(64, 182, 166);
+	background: linear-gradient(
+		90deg,
+		rgba(64, 182, 166, 1) 40%,
+		rgba(48, 182, 106, 0.3085609243697479) 100%
+	);
+	border-radius: 15px;
+}
+
+#keyboard {
+	height: 15rem;
+}
+
+.operator,
+.number,
+.empty {
+	width: 60px;
+	height: 50px;
+	margin: 13px;
+	float: left;
+	border-radius: 50%;
+	border-width: 0px;
+	outline: none;
+	background-color: grey;
+	font-weight: bolder;
+	font-size: 20px;
+}
+button:nth-child(4) {
+	background-color: rgb(253, 0, 0);
+}
+button:nth-child(8) {
+	background-color: rgb(0, 255, 0);
+}
+button:nth-child(12) {
+	background-color: rgb(255, 251, 0);
+}
+button:nth-child(16) {
+	background-color: rgb(255, 123, 0);
+}
+button:nth-child(20) {
+	background-color: rgb(48, 51, 216);
+	border-radius: 15px;
+}
